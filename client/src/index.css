@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+input {
+  height: 45px;
+  width: 420px;
+  border-radius: 200px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: 1px solid #f7f5f5;
+}
+
+select {
+  min-height: 45px;
+  border: 1px solid #b9b9b9;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #000000;
+  box-shadow: none;
+}
+
+.border0 {
+  border: 1.5px solid #073df0;
+  width: 1000px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(9, 82, 167, 0.548);
+  border-radius: 20px;
+}
+
+.border {
+  border: 1.5px solid #073df0;
+  width: 450px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(9, 82, 167, 0.548);
+  border-radius: 20px;
+}
+
+.border1 {
+  border: 1.5px solid #073df0;
+  width: full;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(10, 67, 131, 0.548);
+  border-radius: 0px;
+}
+
+.border2 {
+  border: 1.5px solid #073df0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(9, 82, 167, 0.548);
+  border-radius: 20px;
+}
+
+.border3 {
+  border: 1.5px solid #073df0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(9, 82, 167, 0.548);
+  border-radius: 20px;
+}
+
+.border4 {
+  border: 1.5px solid #073df0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(5, 67, 238, 0.548);
+  border-radius: 20px;
+}
+
+.border5 {
+  border: 1.5px solid #073df0;
+  width: 450px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(9, 82, 167, 0.548);
+  border-radius: 0px;
+}
+
+.border6 {
+  border: 1.5px solid #073df0;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 50px rgba(10, 67, 131, 0.548);
+  border-radius: 20px;
+}
+
+.object {
+  object-fit: cover;
+  height: 150px;
+  width: 200px;
+}
+
+.object1 {
+  object-fit: cover;
+  height: 600px;
+  width: 850px;
+}
+
+button {
+  height: 45px !important;
+}
+
+.blue {
+  background-color: rgb(240, 73, 7);
+  border: 1.5px solid #fa0505;
+}
+
+.text {
+  text-shadow: 0 0 3px #04abf8, 0 0 3px #051df5;
+  text-rendering: auto;
+}
+
+.text1 {
+  font-size: 18px;
+}
+
+table {
+  border: #073df0 1.5px solid;
+  border-radius: 2px;
+  box-shadow: 0 0 50px rgba(9, 82, 167, 0.548);
+}
+
+.max-width {
+  max-width: max-content;
+}
+
+.mody {
+  background-image: url("C:\Users\Raghu T\Downloads\fish.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.rounded-avatar {
+  border-radius: 50%;
+}
+
+body {
+  background-color: rgb(157, 220, 240);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving-text {
+  animation: move 2s infinite;
+}
+
+@keyframes move-avatar {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving-avatar {
+  animation: move-avatar 2s infinite;
+}
+
+.text-with-border {
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #0995f3, -1px 1px 0 #0995f3,
+    1px 1px 0 #0995f3;
+}
+
+.story-card:hover {
+  transform: scale(1.1);
+}
